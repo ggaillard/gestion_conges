@@ -1,0 +1,19 @@
+{# templates/home/index.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    <p>Cette page gère les accès aux congés des utilisateurs.</p>
+    
+    <h2>Access Links</h2>
+    <ul>
+        <li><a href="{{ path('conge') }}">Conge</a></li>
+        <li><a href="{{ path('user') }}">User</a></li>
+    </ul>
+</div>
+{% endblock %}
